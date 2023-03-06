@@ -466,15 +466,15 @@ void AItest ()
 	// this code above does not seem to rank properly every time. debug ------------------------------------------------
 	
 	
-	
-	cout << moveIter<< "moveiter\n";
-    cout << spacesCount<< "score\n";
-    cout << possibleMove[0][moveIter];	// [collumn][row]. row is iteration, collumn is data. Type is Source row
-    cout << possibleMove[1][moveIter];	// Type is Source col
-	cout << possibleMove[2][moveIter];	//Type is Destination Row
-	cout << possibleMove[3][moveIter];	//Type is Destination Col
-	cout << "\n\n\n";
-	
+	// debug only -----------------------------------------------------------
+	//cout << moveIter<< "moveiter\n";
+    //cout << spacesCount<< "score\n";
+    //cout << possibleMove[0][moveIter];	// [collumn][row]. row is iteration, collumn is data. Type is Source row
+    //cout << possibleMove[1][moveIter];	// Type is Source col
+	//cout << possibleMove[2][moveIter];	//Type is Destination Row
+	//cout << possibleMove[3][moveIter];	//Type is Destination Col
+	//cout << "\n\n\n";
+	// debug only -----------------------------------------------------------
 	
 
       for (int ii = 2; ii <= 9; ++ii)
