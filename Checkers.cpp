@@ -2,20 +2,17 @@
 // remember to initialize arrays inside of the function. I spend hours trying to debug random errors in choosing all because an array was initialized
 // outside of the function, and there for if the next array was smaller, it would not overwrite previous data. Initialize to zero
 // tips to change: use vectors to make the arrays dynamic (recommended by AI), also replace each x and o with a constant to make it neater.
-// latest update -------------------------03-MAR-2023------------------------------------------------------------
+// latest update -------------------------06-MAR-2023------------------------------------------------------------
 
 // --------------------------------------DEBUG NOTES---------------------------------------------------------
-// game end check has not been verified since errors occured that locked me from finishing
-// when I trapped it, to which its only move was to be jumped, it would try to make an illegal jump. debug
-// x did not jump me when it had the opportunity. check king jumps, possible move, and ability to jump
+// game end check has not been verified. Online compiler ended before finishing game.
 // does not look at Kx when considering possible moves
 
-// This is fixed by me eventually forfeiting and offering my piece,
-// which the computer then jumps over like normal
-
-// currently, I have removed the implementation that forces the user to jump if they can. reference "jump" and "col/row between"
-// need to add condition in which if you can jump, you move-must ** works with an x
-// need to add condition in which if you jump and can jump again, you must (but it promps you to do it and gives you another turn)
+// currently, I have removed the implementation that forces the user to jump if they can for the user. reference "jump" and "col/row between"
+// need to add condition in which if you can jump, you move-must ** works with AI by ranking jumps as highest score.
+// need to add condition in which if you jump and can jump again (double jump), you must (but it promps you to do it and gives you another turn). May be able to use 
+// similar functionality as the AI by creating an array of possible jumps. However, it would not consider if double jumping would be a worthy sacrifice if it would 
+// be jumped
 
 
 #include <iostream>
