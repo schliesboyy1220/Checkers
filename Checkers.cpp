@@ -3,7 +3,7 @@
 // outside of the function, and there for if the next array was smaller, it would not overwrite previous data. Initialize to zero
 // tips to change: use vectors to make the arrays dynamic (recommended by AI), also replace each x and o with a constant to make it neater.
 // latest update -------------------------06-MAR-2023------------------------------------------------------------
-
+// ------------------------------------------v_1.0: Basic - kings do not work, ending not verified---------------
 // --------------------------------------DEBUG NOTES---------------------------------------------------------
 // game end check has not been verified. Online compiler ended before finishing game.
 // does not look at Kx when considering possible moves
@@ -13,6 +13,8 @@
 // need to add condition in which if you jump and can jump again (double jump), you must (but it promps you to do it and gives you another turn). May be able to use 
 // similar functionality as the AI by creating an array of possible jumps. However, it would not consider if double jumping would be a worthy sacrifice if it would 
 // be jumped
+// need to fix when king jumping. If jumping up when o on top as Ko or jumping down when x as Kx, does not recognize backwards jump, despite allowing it to move (does not remove x or o jumped)
+// I should add an implementation that allows you to choose a side (top or bottom) as well as x or o. This would require some matrix math since it is specific
 
 
 #include <iostream>
